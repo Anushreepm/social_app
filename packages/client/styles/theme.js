@@ -1,0 +1,73 @@
+const colors = {
+    greyS70: '#090E14',
+    greyS50: '#0F1822',
+    greyS30: '#152230',
+    greyS20: '#182636',
+    greyS10: '#1B2B3D',
+    grey100: '#1E3044',
+    greyT15: '#404F60',
+    greyT25: '#566473',
+    greyT35: '#6D7885',
+    greyT50: '#8E97A1',
+    greyT65: '#B0B7BE',
+    greyT75: '#C7CBD0',
+    greyT85: '#DDE0E3',
+    greyT92: '#EDEEF0',
+    greyT96: '#F6F7F8',
+    greyT98: '#FAFBFB',
+}
+
+export const lightTheme = {
+    background: colors.greyT98,
+    postText: colors.greyS10,
+    postTitle: colors.greyS20,
+    underline: colors.greyT92,
+    logoColor: colors.greyS20,
+    backgroundImage: "url('/feathers.png')",
+
+    buttonBackground: colors.grey100,
+    buttonBorder: colors.grey100,
+    buttonText: '#ffffff',
+    buttonHoverBackground: colors.greyS20,
+    buttonActiveBackground: colors.greyS10,
+    secondary: {
+        buttonBackground: colors.greyT98,
+        buttonBorder: colors.greyT25,
+        buttonText: colors.greyT25,
+        buttonHoverBackground: colors.greyT92,
+        buttonActiveBackground: colors.greyT98,
+    },
+    iconColor: colors.greyT25,
+    iconButton: {
+        background: colors.greyT98,
+        active: colors.greyT92,
+        hover: colors.greyT96,
+    },
+}
+
+export const darkTheme = {
+    background: colors.greyS10,
+    postText: colors.greyT92,
+    postTitle: colors.greyS20,
+    underline: colors.greyT15,
+    logoColor: colors.greyT96,
+    backgroundImage: "url('/feathers-dark.png')",
+    buttonBackground: colors.greyT25,
+    buttonBorder: colors.greyT25,
+    buttonText: colors.greyT98,
+    buttonHoverBackground: colors.greyT15,
+    buttonActiveBackground: colors.greyT35,
+    secondary: {
+        buttonBackground: colors.greyS20,
+        buttonBorder: colors.greyT15,
+        buttonText: colors.greyT75,
+        buttonHoverBackground: colors.greyS30,
+        buttonActiveBackground: colors.greyS10,
+    },
+    iconColor: colors.greyT65,
+    iconButton: {
+        background: colors.greyS10,
+        active: colors.greyT15,
+        hover: colors.grey100,
+    },
+}

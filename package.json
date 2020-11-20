@@ -1,0 +1,38 @@
+{
+    "name": "blursocial-app",
+    "private": true,
+    "version": "0.1.0",
+    "repository": "git@github.com:blursocial/blursocial-app.git",
+    "author": "Andrew Hemans <andrew@blursocial.com>",
+    "scripts": {
+        "test": "lerna run test",
+        "publish": "lerna version",
+        "start": "lerna run start --stream",
+        "dev": "lerna run dev --stream",
+        "bootstrap": "lerna bootstrap",
+        "diff": "lerna diff",
+        "change": "lerna changed",
+        "lint": "eslint --ext .ts,.tsx",
+        "prettier": "prettier --write \"packages/**/*.js\""
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "pretty-quick --staged && npm run lint"
+        }
+    },
+    "bugs": {
+        "url": "https://github.com/blursocial/blursocial-web/issues"
+    },
+    "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "^4.5.0",
+        "@typescript-eslint/parser": "^4.5.0",
+        "eslint": "^7.13.0",
+        "eslint-config-prettier": "^6.14.0",
+        "eslint-plugin-prettier": "^3.1.4",
+        "eslint-plugin-react": "^7.21.5",
+        "husky": "^4.3.0",
+        "lerna": "^3.22.1",
+        "prettier": "^2.1.2",
+        "pretty-quick": "^3.1.0"
+    }
+}
