@@ -21,7 +21,9 @@ module.exports = gql`
         confirmPassword: String!
         email: String!
     }
-
+    input updateTaskInput {
+        body: String!
+    }
     type Query {
         getPosts: [Post]
         getPost(postId: ID!): Post
@@ -31,5 +33,6 @@ module.exports = gql`
         login(username: String!, password: String!): User!
         createPost(body: String!, title: String!): Post!
         deletePost(postId: ID!): String!
+        updatePost(postId: ID!, input: updateTaskInput!): Post!
     }
 `

@@ -4,8 +4,9 @@ const jwt = require('jsonwebtoken')
 const { SECRET_KEY } = require('../config')
 
 module.exports = (context) => {
-    // context = { ... headers }
+    // context = { ...headers }
     const authHeader = context.req.headers.authorization
+    console.log(authHeader)
     if (authHeader) {
         // Bearer ....
         const token = authHeader.split('Bearer ')[1]
